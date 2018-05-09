@@ -14,30 +14,36 @@
   <p class="center bump-up">Pick your table now</p>
   <div class="table-container">
     <div class="row">
-      <div class="table unseated">1</div>
-      <div class="table unseated">2</div>
-      <div class="table unseated">3</div>
+      <div class="table available">1</div>
+      <div class="table available">2</div>
+      <div class="table available">3</div>
     </div>
     <div class="row">
-      <div class="table unseated">4</div>
-      <div class="table unseated">5</div>
-      <div class="table unseated">6</div>
+      <div class="table available">4</div>
+      <div class="table available">5</div>
+      <div class="table available">6</div>
     </div>
     <div class="row">
-      <div class="table unseated">7</div>
-      <div class="table unseated">8</div>
-      <div class="table unseated">9</div>
+      <div class="table available">7</div>
+      <div class="table available">8</div>
+      <div class="table available">9</div>
     </div>
   </div>
 
-  <div class="hidden">
-    <p class="bold red">New Reservation</p>
-    <p class="table-number"></p>
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Number">
-    <input type="text" placeholder="Party Size">
-  </div>
 
+    <form class="form-box hidden form-container">
+      <span class="close-window">×</span>
+      <h2 class="bold red">New Reservation</h2>
+      <p class="table-number">Table Number: <span id="table-id"></span></p>
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <input type="text" id="party" placeholder="Party Size">
+      <button type="button" class="btn">Save Table</button>
+    </form>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
